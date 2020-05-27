@@ -18,7 +18,7 @@ class App extends Component{
     {
         
         return(
-            <div className='d'>
+            <div className='text-center bg-info'>
                 <img src={profile} alt='profile' className='profile'/>
                 <h1>Hello</h1>
                 <p>My name is Arjit.</p>
@@ -28,18 +28,18 @@ class App extends Component{
             <p>I live in Allahabad,and I code every day.</p>
             <p>My favorite language is python.</p>
             <p>Beside coding,I like photography.</p>
-            <button onClick={this.toggleDisplayBio} className='b'>Show less</button>
+            <button onClick={this.toggleDisplayBio} className='btn btn-success'>Show less</button>
         </div>
         ): (
             <div>
-                <button onClick={this.toggleDisplayBio} className='b'>Read more</button>
+                <button onClick={this.toggleDisplayBio} className='btn btn-primary'>Read more</button>
             </div>
             
         )}
-            <section className='s1'>
+            <section className='bg-dark text-white'>
             <Projects/>
             </section>
-            <section className='s2'> 
+            <section className='bg-info text-white'> 
             <SocialProfiles/>
             </section>
             </div>
