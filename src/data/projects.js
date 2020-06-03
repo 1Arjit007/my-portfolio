@@ -5,11 +5,12 @@ import project4 from '../assets/project4.png';
 import project5 from '../assets/project5.png';
 import project6 from '../assets/project6.png';
 import project7 from '../assets/project7.png';
+import project8 from '../assets/project8.png';
 
 const PROJECTS =[
     {
         id:1,
-        title:'My Portfolio',
+        title:'My Portfolio for pic',
         description:'A django App that I built,involving  sqllite,bootstrap and python concepts!',
         link:'https://arjit123.pythonanywhere.com/',
         image:project1
@@ -56,6 +57,13 @@ const PROJECTS =[
         description:'A Android App that I built',
         link:'https://github.com/1Arjit007/TipCalc',
         image:project7
+    },
+    {
+        id:8,
+        title:'Portfolio for projects',
+        description:'A React App that I bulid,it involve the  concept of setState,props,Componentwillmount,css animation, joke API,react router,bootstrap and Header component',
+        link:'https://1arjit007.github.io/my-portfolio/',
+        image:project8
     },
 
 
