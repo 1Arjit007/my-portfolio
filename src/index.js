@@ -1,9 +1,35 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import {Router,Switch,Route} from 'react-router-dom';
+import createBrowserHistory from 'history/createBrowserHistory';
+import App from './components/App';
+import Jokes from './components/Jokes';
+import Projects from './components/Projects';
 import './index.css';
 import'bootstrap/dist/css/bootstrap.min.css';
-ReactDOM.render(<App/>,document.getElementById('root'));
+const history = createBrowserHistory();
+ReactDOM.render(
+   <Router history={history}>
+       <Switch>
+           <Route exact path='/my-portfolio' component={App}/>
+           <Route path='/project' component={Projects}/>
+           <Route path='/jokes' component={Jokes}/>
+       </Switch>
+   </Router> ,
+   document.getElementById('root')
+    );
+
+// new Promise(resolve => {
+//     return reject(new Error('No bears'));
+//     setTimeout(()=>{
+//         resolve('Bears','Beets','Battle');
+
+//     },2000);
+// })
+// .then(quote => {
+//     console.log(quote);
+// })
+// .catch(error=>console.log('error',error));
 
 // class RegularClass{}
 // class ComponentClass extends Component{}
