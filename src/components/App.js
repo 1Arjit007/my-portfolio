@@ -4,7 +4,7 @@ import SocialProfiles from './SocialProfiles';
 import Title from './Title';
 import Header from './Header';
 //import Jokes from './Jokes';
-import profile from '../assets/IMG_20180113_162316';
+import profile from '../assets/IMG_20180113_162316.jpg';
 import { findRenderedComponentWithType } from 'react-dom/test-utils';
 class App extends Component{
      state = { displayBio:false };
